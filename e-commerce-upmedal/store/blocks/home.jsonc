@@ -242,7 +242,8 @@
         "product-images#lp",
         "vtex.product-highlights@2.x:product-highlights#1",
         "vtex.product-highlights@2.x:product-highlights#2",
-        "product-summary-price"
+        "product-summary-price",
+        "add-to-cart-button#lp"
       ]
     },
     "product-images#lp": {
@@ -269,6 +270,11 @@
     "product-highlight-text#2":{
       "props":{
         "message": "Validação a partir de 09/10/2021"
+      }
+    },
+    "add-to-cart-button#lp":{
+      "props": {
+        "onClickBehavior": "go-to-product-page"
       }
     }
 }
