@@ -239,12 +239,13 @@
     "product-summary.shelf#lp":{
       "children":[
         "product-summary-name",
-        "product-summary-image#lp"
+        "product-images#lp"
       ]
     },
-    "product-summary-image#lp": {
+    "product-images#lp": {
       "props": {
-        "displayMode": "inline"
+        "showNavigationArrows": true,
+        "showPaginationDots": true  
       }
     }
 }
