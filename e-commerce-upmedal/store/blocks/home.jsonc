@@ -239,13 +239,24 @@
     "product-summary.shelf#lp":{
       "children":[
         "product-summary-name",
-        "product-images#lp"
+        "product-images#lp",
+        "vtex.product-highlights@2.x:product-highlights"
       ]
     },
     "product-images#lp": {
       "props": {
         "showNavigationArrows": true,
         "showPaginationDots": true  
+      }
+    },
+    "vtex.product-highlights@2.x:product-highlights":{
+      "children":[
+        "product-highlight-text"
+      ]
+    },
+    "product-highlight-text":{
+      "props":{
+        "message": "Pré Lançamento. Validação a partir de 09/10/2021"
       }
     }
 }
