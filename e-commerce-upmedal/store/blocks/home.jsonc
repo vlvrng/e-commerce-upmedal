@@ -1,43 +1,43 @@
 {
   "store.home": { 
     "blocks": [
-      "rich-text", "info-card#button-right", "info-card#button-left",
+      "slider-layout#wood-sport",
       "flex-layout.row",
       "info-card#clearance",
       "info-card#vintage"
     ]
   },
-  "rich-text": { 
-    "props": { 
-      "text": "*Olá, Mundo!*",
-      "textPosition": "RIGHT"
-    }
-  },
-  "info-card#button-right":{
+
+  "slider-layout#wood-sport":{
     "props":{
-      "isFullModeStyle": false,
-      "textPosition": "right",
-      "imageUrl": "https://maratonavirtual.s3.sa-east-1.amazonaws.com/6iibxhv7jzzdn2749uhoxub2fdjf?response-content-disposition=inline%3B%20filename%3D%22BANNER-WOOD.png%22%3B%20filename%2A%3DUTF-8%27%27BANNER-WOOD.png&response-content-type=image%2Fpng&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIRHGNFPZAGTZ7SUA%2F20210822%2Fsa-east-1%2Fs3%2Faws4_request&X-Amz-Date=20210822T201735Z&X-Amz-Expires=300&X-Amz-SignedHeaders=host&X-Amz-Signature=2c47e1c447725e4f093b61c94f1ceed57ea9a9c2ed43b681c3d037c38f830891",
-      "headline": "Vintage Pink",
-      "subhead": "Give your kitchen a boho style adding vintage apparels.<br>Available until January 2020.",
-      "callToActionMode": "button",
-      "callToActionText": "Explore",
-      "callToActionUrl": "/sale/d",
-      "textAlignment": "center"
+      "itemsPerPage":{
+        "desktop": 1,
+        "tablet": 1,
+        "phone": 1
+      },
+      "infinite": true,
+      "showNavigationArrows": "desktopOnly",
+      "blockClass": "carousel"
+    },
+    "children": ["rich-text#1", "rich-text#2", "rich-text#3"]
+  },
+
+  "rich-text#1": {
+    "props": {
+      "text": "Test1"
     }
   },
-  "info-card#button-left":{
-    "props":{
-      "isFullModeStyle":false,
-      "textPosition": "left",
-      "imageUrl": "https://appliancetheme.vteximg.com.br/arquivos/cozinha-cinza-min.png",
-      "headline": "Shining Chrome",
-      "subhead": "Give your kitchen a cool style adding warm metallic finishes.<br>Available until January 2020.",
-      "callToActionMode": "link",
-      "callToActionText": "Go to collection",
-      "textAlignment": "center"
+  "rich-text#2": {
+    "props": {
+      "text": "Test2"
     }
   },
+  "rich-text#3": {
+    "props": {
+      "text": "Test3"
+    }
+  },
+
   "flex-layout.row":{
     "children": [
       "info-card#rethink","flex-layout.col"
