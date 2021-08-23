@@ -1,16 +1,159 @@
 {
   "store.home": { 
     "blocks": [
-      "slider-layout#wood-sport",
-      "flex-layout.row",
-      "info-card#clearance",
-      "info-card#vintage"
+      "tab-layout#home",
+      "slider-layout#wood-sport"
     ]
   },
 
-  "slider-layout#wood-sport":{
-    "props":{
-      "itemsPerPage":{
+  "tab-layout#home": {
+    "children": [
+      "tab-list#home",
+      "tab-content#home"
+    ]
+  },
+    "tab-list#home":{
+      "children": [
+        "tab-list.item#home1",
+        "tab-list.item#home2",
+        "tab-list.item#home3",
+        "tab-list.item#home4",
+        "tab-list.item#home5",
+        "tab-list.item#home6",
+        "tab-list.item#home7",
+        "tab-list.item#home8",
+        "tab-list.item#home9",
+        "tab-list.item#home10"
+      ]
+    },
+      "tab-list.item#home1": {
+        "props": {
+        "tabId": "home1",
+        "label": "Promoção"
+        }
+      },
+      "tab-list.item#home2": {
+        "props": {
+        "tabId": "home2",
+        "label": "Corinthians"
+        }
+      },
+      "tab-list.item#home3": {
+        "props": {
+        "tabId": "home3",
+        "label": "Palmeiras"
+        }
+      },
+      "tab-list.item#home4": {
+        "props": {
+        "tabId": "home4",
+        "label": "Signos"
+        }
+      },
+      "tab-list.item#home5": {
+        "props": {
+        "tabId": "home5",
+        "label": "Divertidos"
+        }
+      },
+      "tab-list.item#home6": {
+        "props": {
+        "tabId": "home6",
+        "label": "7 Maravilhas"
+        }
+      },
+      "tab-list.item#home7": {
+        "props": {
+        "tabId": "home7",
+        "label": "Guerreiros"
+        }
+      },
+      "tab-list.item#home8": {
+        "props": {
+        "tabId": "home8",
+        "label": "Álbum 1"
+        }
+      },
+      "tab-list.item#home9": {
+        "props": {
+        "tabId": "home9",
+        "label": "Álbum 2"
+        }
+      },
+      "tab-list.item#home10": {
+        "props": {
+        "tabId": "home10",
+        "label": "Álbum 3"
+        }
+      },
+    "tab-content#home": {
+      "children":[
+        "tab-content.item#home1",
+        "tab-content.item#home2",
+        "tab-content.item#home3",
+        "tab-content.item#home4",
+        "tab-content.item#home5",
+        "tab-content.item#home6",
+        "tab-content.item#home7",
+        "tab-content.item#home8",
+        "tab-content.item#home9",
+        "tab-content.item#home10"
+      ]
+    },
+      "tab-content.item#home1": {
+        "props": {
+        "tabId": "home1"
+        }
+      },
+      "tab-content.item#home2": {
+        "props": {
+          "tabId": "home2"
+        }
+      },
+      "tab-content.item#home3": {
+        "props": {
+          "tabId": "home3"
+        }
+      },
+      "tab-content.item#home4": {
+        "props": {
+          "tabId": "home4"
+        }
+      },
+      "tab-content.item#home5": {
+        "props": {
+          "tabId": "home5"
+        }
+      },
+      "tab-content.item#home6": {
+        "props": {
+          "tabId": "home6"
+        }
+      },
+      "tab-content.item#home7": {
+        "props": {
+          "tabId": "home7"
+        }
+      },
+      "tab-content.item#home8": {
+        "props": {
+          "tabId": "home8"
+        }
+      },
+      "tab-content.item#home9": {
+        "props": {
+          "tabId": "home9"
+        }
+      },
+      "tab-content.item#home10": {
+        "props": {
+          "tabId": "home10"
+        }
+      }, 
+  
+  "slider-layout#wood-sport": {
+    "props": {
+      "itemsPerPage": {
         "desktop": 1,
         "tablet": 1,
         "phone": 1
@@ -19,79 +162,20 @@
       "showNavigationArrows": "desktopOnly",
       "blockClass": "carousel"
     },
-    "children": ["rich-text#1", "rich-text#2", "rich-text#3"]
+    "children": ["image#wood-sport", "image#warriors"]
   },
 
-  "rich-text#1": {
-    "props": {
-      "text": "Test1"
-    }
-  },
-  "rich-text#2": {
-    "props": {
-      "text": "Test2"
-    }
-  },
-  "rich-text#3": {
-    "props": {
-      "text": "Test3"
-    }
-  },
+    "image#wood-sport": {
+      "props": {
+        "src": "https://maratonavirtual.s3.sa-east-1.amazonaws.com/6iibxhv7jzzdn2749uhoxub2fdjf?response-content-disposition=inline%3B%20filename%3D%22BANNER-WOOD.png%22%3B%20filename%2A%3DUTF-8%27%27BANNER-WOOD.png&response-content-type=image%2Fpng&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIRHGNFPZAGTZ7SUA%2F20210822%2Fsa-east-1%2Fs3%2Faws4_request&X-Amz-Date=20210822T201735Z&X-Amz-Expires=300&X-Amz-SignedHeaders=host&X-Amz-Signature=2c47e1c447725e4f093b61c94f1ceed57ea9a9c2ed43b681c3d037c38f830891",
+        "maxWidth": "100%"
+      }
+    },
 
-  "flex-layout.row":{
-    "children": [
-      "info-card#rethink","flex-layout.col"
-    ]
-  },
-  "flex-layout.col":{
-    "children": [
-      "image#electronics", "image#major-appliance"
-    ]
-  },
-"image#electronics": {
-  "props": {
-    "src": "https://appliancetheme.vteximg.com.br/assets/vtex.file-manager-graphql/images/electronics_banner___25d69b49f8224b369375e68513b4d593.png",
-    "maxWidth": "100%"
-  }
-},
-"image#major-appliance": {
-  "props": {
-    "src": "https://appliancetheme.vteximg.com.br/assets/vtex.file-manager-graphql/images/major_appliance_banner___bb10093866a127345ddfbcca3efa5022.png",
-    "maxWidth": "100%"
-  }
-},
-  "info-card#rethink":{
-    "props":{
-      "imageUrl": "https://appliancetheme.vteximg.com.br/arquivos/utensilios-cozinha-min.png",
-      "isFullModeStyle": true,
-      "headline": "Time to rethink your kitchen",
-      "callToActionText": "Discover",
-      "textPosition": "center"
+    "image#warriors": {
+      "props": {
+        "src": "https://maratonavirtual.s3.sa-east-1.amazonaws.com/du3k6akoks0u3xe322aypnaaal8e?response-content-disposition=inline%3B%20filename%3D%22W6S9NXIJ40I86DJI17S40123EYNM3J6CNF24M4Y04GGC9TBSXU.png%22%3B%20filename%2A%3DUTF-8%27%27W6S9NXIJ40I86DJI17S40123EYNM3J6CNF24M4Y04GGC9TBSXU.png&response-content-type=image%2Fpng&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIRHGNFPZAGTZ7SUA%2F20210823%2Fsa-east-1%2Fs3%2Faws4_request&X-Amz-Date=20210823T145556Z&X-Amz-Expires=300&X-Amz-SignedHeaders=host&X-Amz-Signature=4fe5062040b467a2bad951350878ea6eef8d3ee7d231f28d1fe6d6f6366247c5",
+        "maxWidth": "100%"
+      }
     }
-  },
-  "info-card#clearance": {
-    "props": {
-      "id": "info-card-clearance",
-      "isFullModeStyle": false,
-      "textPosition": "left",
-      "imageUrl": "https://storecomponents.vteximg.com.br/arquivos/banner-infocard2.png",
-      "headline": "Clearance Sale",
-      "callToActionText": "DISCOVER",
-      "callToActionUrl": "/sale/d",
-      "textAlignment": "center"
-    }
-  },
-  "info-card#vintage": {
-    "props": {
-        "id": "info-card-vintage",
-        "isFullModeStyle": false,
-        "textPosition": "right",
-        "imageUrl": "https://appliancetheme.vteximg.com.br/arquivos/cozinha-rosa-min.png",
-        "headline": "Vintage",
-        "callToActionText": "DISCOVER",
-        "callToActionUrl": "/sale/d",
-        "textAlignment": "center",
-        "blockClass": "vintage"
-    }
-  }
 }
