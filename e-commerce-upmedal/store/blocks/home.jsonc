@@ -2,7 +2,8 @@
   "store.home": { 
     "blocks": [
       "tab-layout#home",
-      "slider-layout#wood-sport"
+      "slider-layout#wood-sport",
+      "search-result-layout.customQuery#home"
     ]
   },
 
@@ -177,5 +178,39 @@
         "src": "https://maratonavirtual.s3.sa-east-1.amazonaws.com/du3k6akoks0u3xe322aypnaaal8e?response-content-disposition=inline%3B%20filename%3D%22W6S9NXIJ40I86DJI17S40123EYNM3J6CNF24M4Y04GGC9TBSXU.png%22%3B%20filename%2A%3DUTF-8%27%27W6S9NXIJ40I86DJI17S40123EYNM3J6CNF24M4Y04GGC9TBSXU.png&response-content-type=image%2Fpng&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIRHGNFPZAGTZ7SUA%2F20210823%2Fsa-east-1%2Fs3%2Faws4_request&X-Amz-Date=20210823T145556Z&X-Amz-Expires=300&X-Amz-SignedHeaders=host&X-Amz-Signature=4fe5062040b467a2bad951350878ea6eef8d3ee7d231f28d1fe6d6f6366247c5",
         "maxWidth": "100%"
       }
+    },
+    "search-result-layout.customQuery#home": {
+      "props": {
+        "querySchema": {
+          "skusFilter": "FIRST_AVAILABLE",
+          "simulationBehavior": "skip"
+        }
+      },
+      "blocks": [
+        "search-result-layout.desktop#lp",
+        "search-result-layout.mobile#lp",
+        "search-not-found-layout"
+      ]
+    },
+    "search-result-layout.desktop#lp": {
+      "children": [
+        //"flex-layout.row#searchbread",
+        //"flex-layout.row#searchtitle",
+        "flex-layout.row#result"
+      ],
+      "props": {
+        "preventRouteChange": true
+      }
+    },
+    "flex-layout.row#result": {
+      "children": [
+        "search-content#lp"
+      ]
+    },
+    "search-content#lp":{
+      "blocks":[
+        "gallery",
+        "not-found"
+      ]
     }
 }
