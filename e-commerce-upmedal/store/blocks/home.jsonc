@@ -240,23 +240,35 @@
       "children":[
         "product-summary-name",
         "product-images#lp",
-        "vtex.product-highlights@2.x:product-highlights"
+        "vtex.product-highlights@2.x:product-highlights#1",
+        "vtex.product-highlights@2.x:product-highlights#2",
+        "product-summary-price"
       ]
     },
     "product-images#lp": {
       "props": {
         "showNavigationArrows": true,
-        "showPaginationDots": true  
+        "showPaginationDots": true        
       }
     },
-    "vtex.product-highlights@2.x:product-highlights":{
+    "vtex.product-highlights@2.x:product-highlights#1":{
       "children":[
-        "product-highlight-text"
+        "product-highlight-text#1"
       ]
     },
-    "product-highlight-text":{
+    "product-highlight-text#1":{
       "props":{
-        "message": "Pré Lançamento. Validação a partir de 09/10/2021"
+        "message": "Pré Lançamento"
+      }
+    },
+    "vtex.product-highlights@2.x:product-highlights#2":{
+      "children":[
+        "product-highlight-text#2"
+      ]
+    },
+    "product-highlight-text#2":{
+      "props":{
+        "message": "Validação a partir de 09/10/2021"
       }
     }
 }
