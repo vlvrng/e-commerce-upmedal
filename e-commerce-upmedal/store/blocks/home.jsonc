@@ -194,8 +194,6 @@
     },
     "search-result-layout.desktop#lp": {
       "children": [
-        //"flex-layout.row#searchbread",
-        //"flex-layout.row#searchtitle",
         "flex-layout.row#result"
       ],
       "props": {
@@ -209,8 +207,44 @@
     },
     "search-content#lp":{
       "blocks":[
-        "gallery",
+        "gallery#lp",
         "not-found"
       ]
+    },
+
+    "gallery#lp":{
+      "props":{
+        "layouts":[
+          {
+            "name": "grid",
+            "component": "GridSummary",
+            "itemsPerRow": {
+              "(min-width:1300px)": 4,
+              "desktop": 3,
+              "tablet": 3,
+              "phone": 2
+            }
+          },
+          {
+            "name": "list",
+            "component": "ListSummary",
+            "itemsPerRow": 1
+          }
+        ],
+        "ListSummary": "product-summary.shelf#lp",
+        "GridSummary": "product-summary.shelf#lp"
+      }
+    },
+
+    "product-summary.shelf#lp":{
+      "children":[
+        "product-summary-name",
+        "product-summary-image#lp"
+      ]
+    },
+    "product-summary-image#lp": {
+      "props": {
+        "displayMode": "inline"
+      }
     }
 }

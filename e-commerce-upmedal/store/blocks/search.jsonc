@@ -19,8 +19,6 @@
   },
   "search-result-layout.desktop#lp": {
     "children": [
-      //"flex-layout.row#searchbread",
-      //"flex-layout.row#searchtitle",
       "flex-layout.row#result"
     ],
     "props": {
