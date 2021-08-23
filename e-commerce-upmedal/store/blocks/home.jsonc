@@ -15,7 +15,7 @@
   },
   "info-card#button-right":{
     "props":{
-      "isFullModeStyle": true,
+      "isFullModeStyle": false,
       "textPosition": "right",
       "imageUrl": "https://maratonavirtual.s3.sa-east-1.amazonaws.com/6iibxhv7jzzdn2749uhoxub2fdjf?response-content-disposition=inline%3B%20filename%3D%22BANNER-WOOD.png%22%3B%20filename%2A%3DUTF-8%27%27BANNER-WOOD.png&response-content-type=image%2Fpng&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIRHGNFPZAGTZ7SUA%2F20210822%2Fsa-east-1%2Fs3%2Faws4_request&X-Amz-Date=20210822T201735Z&X-Amz-Expires=300&X-Amz-SignedHeaders=host&X-Amz-Signature=2c47e1c447725e4f093b61c94f1ceed57ea9a9c2ed43b681c3d037c38f830891",
       "headline": "Vintage Pink",
